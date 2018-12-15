@@ -1,14 +1,30 @@
 <div class="center jumbotron">
-  <h1>Welcome to the Sample App</h1>
+  <h1>Web Api Bundle Recommendation Base on Compositional Semantics</h1>
 
-  <h2>
+  <!--h2>
     This is the home page for the
     <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
     sample application.
-  </h2>
+  </h2-->
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-  <%= link_to "Try to search for recommendation!", recommendation_path, class: "btn btn-lg btn-primary" %>
+
+  <!--%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %-->
+  <%= link_to "Try to use our recommendation now!", recommendation_path, class: "btn btn-lg btn-primary" %>
 </div>
-<%= link_to image_tag("rails.png", alt: "Rails logo"),
+<h1>
+Introduction
+</h1>
+<h2>
+  Mashing up Web services is a popular approach to compose existing web services, in order to create value-added new services, improve the development efficiency, solve the problem of software reuse, etc.
+    However, an increasing number of services are published on the Web and leads to the difficulty of choosing appropriate services for mashup creation.
+    Currently, there are already some service recommendation techniques that have been developed for mashup creation, however, they are largely limited to suggesting services with similar functionality.
+    To tackle this problem, we present a novel approach to recommend a bundle of complemenatry services to fulfil users' requirements.
+    Compared with the semantics of a single service,
+    the service group which is composed of different services processes richer and more extensive semantics.
+    Therefore, we devise compositional semantics to present the deep semantic of service group.
+    In this model, we leverage Latent Dirichlet Allocation, Discourse Parser to construct a compositional semantic knowledge base. Based on the constructed knowledge base,
+    a bundle of complementary service groups are recommended to fulfil users’ requirements. We conduct careful experiments on the real-world dataset,
+  	showing significant improvements in both precision and recall metrics over the state-of-the-art methods.
+</h2>
+<%= link_to image_tag("process.png",size: "600x500",alt: "Rails logo"),
             'http://rubyonrails.org/' %>
