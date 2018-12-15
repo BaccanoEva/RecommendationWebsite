@@ -1,0 +1,13 @@
+<% provide(:title, @text.question) %>
+
+<div class="row">
+  <aside class="col-md-4">
+    <section class="text_info">
+      <h1>
+        <%= @text.question %>
+        <%= recommendation_for @text.question %>
+
+      </h1>
+    </section>
+  </aside>
+</div>

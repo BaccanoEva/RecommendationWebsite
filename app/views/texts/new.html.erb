@@ -1,0 +1,14 @@
+<% provide(:title, 'Recoomenadtion') %>
+<h1>Tell me what you got</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@text, url: recommendation_path) do |f| %>
+      <%= f.label :What_do_you_need %>
+      <%= f.text_field :question %>
+
+
+      <%= f.submit "Recommendation", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
