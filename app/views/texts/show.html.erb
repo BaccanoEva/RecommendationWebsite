@@ -1,13 +1,17 @@
 <% provide(:title, @text.question) %>
-
+<%= $result = recommendation_for @text %>
 <div class="row">
   <aside class="col-md-4">
     <section class="text_info">
-      <h1>
-        <%= @text.question %>
-        <%= recommendation_for @text.question %>
+    <h1>
+      <% $result.each do |key,value| %>
+      <li>
+        <%= value %>
+      </li>
+      <% end %>
+    </h1>
 
-      </h1>
+
     </section>
   </aside>
 </div>
