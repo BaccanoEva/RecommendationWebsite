@@ -10,7 +10,7 @@ module TextsHelper
     #print python_cmd
     a = text.question
     pp a
-    result = `python /Users/liuyancen/Desktop/test.py '#{a}'`
+    result = `python /Users/liuyancen/Desktop/test_2.py '#{a}'`
 
     return JSON.parse(File.read('/Users/liuyancen/Desktop/test.json'))
     #return JSON.parse(json)

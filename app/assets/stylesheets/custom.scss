@@ -16,12 +16,14 @@ textarea {
 
 .center {
   text-align: center;
+  font-family: Optima;
 }
 
 .center h1 {
   font-size: 3em;
   margin-bottom: 10px;
   text-align: center;
+  font-family: Optima;
 }
 /* typography */
 
@@ -30,24 +32,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2em;
-  letter-spacing: -1px;
+  font-size: 3em;
+  letter-spacing: -0.5px;
   margin-bottom: 30px;
   text-align: left;
+  font-family: Optima;
+  font-weight:Thick;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   letter-spacing: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  margin-left: 1cm;
+  margin-right: 1cm;
   text-align: left;
   font-weight: normal;
   color: #777;
+  font-family: Optima;
+  line-height: 1.5em;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  font-family: Optima;
 }
 
 /* header */
@@ -60,6 +69,7 @@ p {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  font-family: Optima;
 }
 
 #logo:hover {
@@ -73,6 +83,7 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
+  font-family: Optima;
 }
 
 footer a {
@@ -124,23 +135,32 @@ aside {
     margin-top: 20px;
   }
   section {
-    padding: 10px 0;
+    padding: 20px 0;
     margin-top: 20px;
     &:first-child {
       border: 0;
       padding-top: 0;
     }
     span {
-      display: block;
+      //display: block;
       margin-bottom: 3px;
       line-height: 1;
     }
     h1 {
-      font-size: 1.4em;
+      font-size: 1.7em;
       text-align: left;
-      letter-spacing: -1px;
+      letter-spacing: 0px;
       margin-bottom: 3px;
       margin-top: 0px;
+      font-family: Optima;
+    }
+    h2 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: 0px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+      font-family: Optima;
     }
   }
 }
@@ -153,25 +173,16 @@ aside {
 .gravatar_edit {
   margin-top: 15px;
 }
+
 /* forms */
 
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
+  border: 2px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
-}
-
-input {
-  height: auto !important;
-}
-/* forms */
-
-input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
-  width: 100%;
-  margin-bottom: 15px;
-  @include box_sizing;
+  font-family: Optima;
+  font-size: 1.4em;
 }
 
 input {

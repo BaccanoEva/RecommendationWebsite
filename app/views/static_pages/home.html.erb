@@ -14,7 +14,10 @@
 <h1>
 Introduction
 </h1>
+
 <h2>
+  <%= link_to image_tag("process.png",size: "480x400",alt: "Rails logo",style: "float:left"),
+              'http://rubyonrails.org/' %>
   Mashing up Web services is a popular approach to compose existing web services, in order to create value-added new services, improve the development efficiency, solve the problem of software reuse, etc.
     However, an increasing number of services are published on the Web and leads to the difficulty of choosing appropriate services for mashup creation.
     Currently, there are already some service recommendation techniques that have been developed for mashup creation, however, they are largely limited to suggesting services with similar functionality.
@@ -26,5 +29,3 @@ Introduction
     a bundle of complementary service groups are recommended to fulfil users’ requirements. We conduct careful experiments on the real-world dataset,
   	showing significant improvements in both precision and recall metrics over the state-of-the-art methods.
 </h2>
-<%= link_to image_tag("process.png",size: "600x500",alt: "Rails logo"),
-            'http://rubyonrails.org/' %>

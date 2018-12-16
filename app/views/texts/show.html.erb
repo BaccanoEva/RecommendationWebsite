@@ -1,18 +1,18 @@
 <% provide(:title, @text.question) %>
-<%= $result = recommendation_for @text %>
+
 <div class="row">
-  <aside class="col-md-4">
+  <aside class="col-md-20">
     <section class="text_info">
     <h1>
       APIs recommended for you:
     <h1>
-    <h1>
-      <% $result.each do |key,value| %>
+    <h2>
+      <% (recommendation_for @text).each do |key,value| %>
       <li>
         <%= value %>
       </li>
       <% end %>
-    </h1>
+    </h2>
 
 
     </section>
