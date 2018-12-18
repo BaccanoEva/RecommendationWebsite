@@ -9,10 +9,11 @@ module TextsHelper
     #system python_cmd
     #print python_cmd
     a = text.question
-    pp a
-    result = `python /Users/liuyancen/Desktop/test_2.py '#{a}'`
-
-    return JSON.parse(File.read('/Users/liuyancen/Desktop/test.json'))
+    #pp a
+    result = `python test_2.py '#{a}'`
+    pp "result ="
+    pp result
+    return JSON.parse(File.read('test.json'))
     #return JSON.parse(json)
     #return obj
   end
